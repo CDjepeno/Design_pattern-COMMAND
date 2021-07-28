@@ -1,4 +1,4 @@
-export interface ICommand {
+export interface ICommand  {
   execute(): void
-
+  unExecute(): void
 }

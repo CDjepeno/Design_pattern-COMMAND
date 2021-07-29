@@ -1,4 +1,5 @@
 import { ICommand } from '../interface/ICommand';
+import { NotCommand } from '../commands/NotCommand';
 export class RemoteControl {
   commandOn: any[] = [] 
   commandOff: any[] = []   
@@ -10,7 +11,7 @@ export class RemoteControl {
    this.commandOff = Array.from(Array(7).keys())
    this.commandOn = Array.from(Array(7).keys())
 
-   let notCommand: Array<number> = Array.from(Array().keys())
+   let notCommand: NotCommand = new NotCommand()
 
    for (let i = 0; i < 7; i++) {
      this.commandOn[i] = notCommand

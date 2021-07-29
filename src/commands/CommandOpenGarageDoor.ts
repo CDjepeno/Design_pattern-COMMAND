@@ -12,7 +12,7 @@ export class CommandOpenGarageDoor implements ICommand {
     return this.garageDoor.open()
   }
   unExecute() {
-    return 'anulation commande'
+    return this.garageDoor.close()
   }
 
 }

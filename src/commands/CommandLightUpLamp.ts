@@ -11,7 +11,7 @@ export class CommandLightUpLamp implements ICommand {
     return this.lamp.on()
   }
   unExecute() {
-    return 'anulation commande'
+    return this.lamp.off()
   }
 
 }
